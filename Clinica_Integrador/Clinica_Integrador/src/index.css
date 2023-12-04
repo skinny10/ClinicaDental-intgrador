@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+  .screen{
+    @apply w-[90%] mx-auto overflow-hidden max-w-screen-xl;
+  }
+}/* CSS */
+.custom-table-container {
+  margin-top: 1rem; /* Ajusta según sea necesario */
+  margin-left: 1rem; /* Ajusta según sea necesario */
+}
+.Agendar-citas{
+ background-color: black;
+  
+}
+
+.custom-table {
+  width: auto;
+  border-collapse: collapse;
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+td{
+  background-color: mintcream;
+}
+
+.custom-table th {
+  background-color: #4a5568;
+  color: #ffffff;
+}
+
+/* Section1.css */
+.section-image {
+  max-width: 100%; /* Hacer que la imagen ocupe el 100% del ancho en todos los tamaños */
+  height: auto;
+}
+
+.section-content {
+  text-align: center; /* Centrar el contenido en todos los tamaños */
+}
+
+/* Media query para pantallas de teléfonos */
+@media (max-width: 767px) {
+  .section-content {
+    padding: 0 20px; /* Agregar un poco de relleno en los lados para pantallas más pequeñas */
+  }
+}
+
+/* Media query para pantallas de tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .section-image {
+    max-width: 80%; /* Reducir un poco el tamaño de la imagen en tablets */
+  }
+}
+
+/* Media query para pantallas de laptops y tamaños más grandes */
+@media (min-width: 1024px) {
+  .section-image {
+    max-width: 50%; /* Reducir aún más el tamaño de la imagen en pantallas más grandes */
+  }
+}
+
